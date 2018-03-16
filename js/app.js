@@ -94,7 +94,10 @@ undefined
 const longestWord = (a) => {
 
 }
-
+//
+const find_longest_word(text):
+   const longest_word = max(text.split(), key = len)
+    return longest_word, len(longest_word)
 
 
 
@@ -105,6 +108,14 @@ const longestWord = (a) => {
 
 
 
+
+const longestWord = (a) => {
+	for (let i = longestWord.length; i >= 0; i--) {
+		longestWord[i]
+	}
+	console.log(longestWord)
+}
+// i keep trying and will continue to try until I learn how to do it. Thank you for teaching us
 
 
 
