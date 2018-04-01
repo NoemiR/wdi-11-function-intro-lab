@@ -4,7 +4,14 @@ console.log('Doing Homework')
 
 
 
-// Write a function lengths that accepts a single parameter as an argument, namely an array of strings. The function should return an array of numbers. Each number in the array should be the length of the corresponding string. To get you started, you'll need to loop through each string in the array and get the length of each one. Those lengths should be stored in a different array that you will return.
+// Write a function lengths that accepts a 
+//single parameter as an argument, namely an array 
+//of strings. The function should return an array of 
+//numbers. Each number in the array should be the length
+// of the corresponding string. To get you started, 
+//you'll need to loop through each string in the array
+// and get the length of each one. Those lengths should 
+//be stored in a different array that you will return.
 
 // Remember that when building a function, you want to use declare a function with a name that accepts arguments. So for building our function called lengths that accepts an array of strings, it might look something like:
 
@@ -30,7 +37,7 @@ const lengths = (arrayOfStrings) => {
 //
 //
 const transmogrifier = (num1, num2, num3) => {
-    return (num1 * num2) ** num3
+    return Math.pow(num1 * num2, num3);
 };
 
 transmogrifier(5, 4, 3)     //8000
@@ -40,24 +47,26 @@ transmogrifier(42, 13, 7).  //14466001271480793000
 
 
 //////
-// const toonify = (accent, sentence) => {
-// 	if(accent = "daffy")
-// 	return sentence.replaced(/s/i 'th')
-// 	else if(accent = "elmers")
-// 		return sentence.replaced(/s/i 'w')
-// 	else {
-
-// 	}
-// }
-// 	toonify("daffy", "so you smell like sausage");
-
-
+const toonify = (accent, sentence) => {
+	if(accent = "daffy") {
+	return sentence.replaced(/s/i 'th')
+	}
+	else if(accent = "elmers"){
+		return sentence.replaced(/s/i 'w')
+	}
+	
+}
+	console.log(toonify("daffy", "so you smell like sausage"));
 
 ////
-// Write a function letterReverse that accepts a single argument, a string. 
-// The function should maintain the order of words in the string but reverse the letters in each word. 
+// Write a function letterReverse 
+//that accepts a single argument, a string. 
+// The function should maintain 
+//the order of words in the string but reverse 
+//the letters in each word. 
 // Don't worry about punctuation. 
-// This will be very similar to round 4 except you won't need to split them with a space.
+// This will be very similar to round 4 
+//except you won't need to split them with a space.
 
 
 // const letterReverse = (string) => {
@@ -74,31 +83,25 @@ transmogrifier(42, 13, 7).  //14466001271480793000
 
 const letterR= ['one', 'two', 'three'];
 const reversed = letterR.reverse();
-undefined
-console.log(letterR + reversed);
-VM551:1 three,two,onethree,two,one
-undefined
-
-/// and then I tried this
-const letterReversed= ['one', 'two', 'three'];
-	console.log(letterReversed.reverse);
-VM601:2 ƒ reverse() { [native code] }
-undefined
-//slowly I am understanding
-
-
+console.log(letterR + " " + reversed);
 
 ///Write a function longest that accepts a single argument, an array of strings. 
 //The method should return the longest word in the array. In case of a tie, 
 //the method should return the word that appears first in the array.
 const longestWord = (a) => {
-
+	const maxLength = 0;
+	const maxWord = "";
+	for (let s in longestWord){
+		if(longestWord[s].length > maxLength){
+			maxLength = longestWord[s].length;
+			maxWord = longestWord[s];
+		}
+	}
+	return maxWord;
 }
-//
-const find_longest_word(text):
-   const longest_word = max(text.split(), key = len)
-    return longest_word, len(longest_word)
 
+console.log(longestWord(['oh', 'good', 'grief']));
+console.log(longestWord(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"]));
 
 
 // Reference: MDN: String.length
@@ -106,16 +109,14 @@ const find_longest_word(text):
 // longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
 // # => "unrequited"
 
-
-
-
 const longestWord = (a) => {
 	for (let i = longestWord.length; i >= 0; i--) {
 		longestWord[i]
 	}
 	console.log(longestWord)
 }
-// i keep trying and will continue to try until I learn how to do it. Thank you for teaching us
+// i keep trying and will continue to try until 
+//I learn how to do it. Thank you for teaching us
 
 
 
